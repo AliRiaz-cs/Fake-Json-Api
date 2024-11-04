@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake JSON API Example</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <ul id="users"></ul>
+
+    <h1>Companies</h1>
+    <ul id="companies"></ul>
+
+
+
+    <script>
+        // Function to fetch and display users
+        function fetchUsers() {
+            fetch('http://localhost:3000/users')
+                .then(response => response.json())
+                .then(data => {
+                    const usersList = document.getElementById('users');
+                    data.forEach(user => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `${user.firstName} ${user.lastName} (${user.email})`;
+                        usersList.appendChild(listItem);
+                    });
+                });
+        }
+
+        // Function to fetch and display companies
+        function fetchCompanies() {
+            fetch('http://localhost:3000/companies')
+                .then(response => response.json())
+                .then(data => {
+                    const companiesList = document.getElementById('companies');
+                    data.forEach(company => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `${company.name} - ${company.description}`;
+                        companiesList.appendChild(listItem);
+                    });
+                });
+        }
+
+
+        // Fetch data when the page loads
+        window.onload = function() {
+            fetchUsers();
+            fetchCompanies();
+            fetchComments();
+        };
+    </script>
+</body>
+</html>

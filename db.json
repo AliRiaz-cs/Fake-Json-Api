@@ -1,0 +1,58 @@
+    {
+        "users" :[
+                    {   
+                        "id":"1",
+                        "firstName":"Ali",
+                        "lastName":"Riaz",
+                        "email":"aliriaz@gmail.com",
+                        "age": 23,
+                        "companyID":"1"
+
+                    },
+                    {   
+                        "id":"2",
+                        "firstName":"shahab",
+                        "lastName":"ghouri",
+                        "email":"shahabghouri@gmail.com",
+                        "age": 23,
+                        "companyID":"2"
+
+                    },
+                    {   
+                        "id":"3",
+                        "firstName":"Huzaifa Masood",
+                        "lastName":"Riaz",
+                        "email":"huzmasood@gmail.com",
+                        "age": 24,
+                        "companyID":"3"
+
+                    }    
+        ],
+        "companies":[
+            {
+                "id":"1",
+                "name":"Apple",
+                "description":"lorem10 skams ksamsa ksamsj d jsndjsa jndasjldn nldnlks  jsdskdla kdlsndlk sak dklsa klsandksa dklsa dkls dkls ks dksl"
+            },
+
+            {
+                "id":"2",
+                "name":"Samsung",
+                "description":"Samsung is a South Korean multinational conglomerate that specializes in electronics, and is one of the world's largest producers of electronic devices"
+            },
+
+            {
+                "id":"3",
+                "name":"Microsoft",
+                "description":"Microsoft is an American multinational technology company that develops and sells software, services, and hardware"
+            }
+
+        ],
+
+        
+            "comments": [
+              { "id": 1, "postId": 1, "content": "Great post!" },
+              { "id": 2, "postId": 1, "content": "Thanks for sharing!" }
+            ]
+          
+    }
